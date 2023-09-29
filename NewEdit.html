@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recreation of Who's Afraid of Red, Yellow and Blue III</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+    <a-scene background="color: white">
+        <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+        <!-- Box -->
+      <!--
+        <a-box position="0 3 -5" scale="5.44 2.24 0.1" color="#CE0000" animation__red="property: position; dir: alternate; dur: 20000; to: 0 1d -0.1; loop: true; easing: linear"></a-box>
+        <a-box position="-0.44 3 -5.1" scale="5.44 2.24 0.1" color="#000081" animation__red="property: position; dir: alternate; dur: 20000; to: -0.2 1 -0.11; loop: true; easing: linear"></a-box>
+        <a-box position="0.44 3 -5.1" scale="5.44 2.24 0.1" color="#F7AE00" animation__red="property: position; dir: alternate; dur: 20000; to: 0.2 1 -0.11; loop: true; easing: linear"></a-box>
+        -->
+      
+        <!-- Paintings -->
+        <a-box position="6 3 -11.88" rotation="0 0 0" height = "2.825" width = "0.08750" depth = ".02" color="#00007f"></a-box>
+      <a-box position="6.971250 3 -11.88" rotation="0 0 0" height = "2.825" width = "1.855" depth = ".02" color="#ce0000"></a-box>
+      <a-box position="7.9275 3 -11.88" rotation="0 0 0" height = "2.825" width = "0.0575" depth = ".02" color="#fdc900"></a-box>
+      
+      <a-box position="-6 3 -11.88" rotation="0 0 0" height = "2.35" width = "0.0625" depth = ".02" color="#ce0000"></a-box>
+      <a-box position="-5.95625 3 -11.88" rotation="0 0 0" height = "2.35" width = "0.025" depth = ".02" color="#fdc900"></a-box>
+      <a-box position="-5.49375 3 -11.88" rotation="0 0 0" height = "2.35" width = "0.9" depth = ".02" color="#ce0000"></a-box>
+      <a-box position="-5.025 3 -11.88" rotation="0 0 0" height = "2.35" width = "0.0375" depth = ".02" color="#00007f"></a-box>
+      <a-box position="-4.55625 3 -11.88" rotation="0 0 0" height = "2.35" width = "0.9" depth = ".02" color="#ce0000"></a-box>
+      <a-box position="-4.09375 3 -11.88" rotation="0 0 0" height = "2.35" width = "0.025" depth = ".02" color="#fdc900"></a-box>
+      <a-box position="-4.05 3 -11.88" rotation="0 0 0" height = "2.35" width = "0.0625" depth = ".02" color="#ce0000"></a-box>
+      w
+      <a-box position="-4.026392961878 3 11.88" rotation="0 0 0" height = "1.329423264908" width = "0.0469208211144" depth = ".02" color="#00007f"></a-box>
+      <a-box position="-5.023460410558 3 11.88" rotation="0 0 0" height = "1.329423264908" width = "1.947214076246" depth = ".02" color="#ce0000"></a-box>
+      <a-box position="-6 3 11.88" rotation="0 0 0" height = "1.329423264908" width = "0.0058651026393" depth = ".02" color="#fdc900"></a-box>
+      
+      <a-box position="7.5771260997 3 11.88" rotation="0 0 0" height = "1.32942326491" width = "0.918866080156" depth = ".02" color="#ce0000"></a-box>
+      <a-box position="7.01857282502 3 11.88" rotation="0 0 0" height = "1.32942326491" width = "0.199413489736" depth = ".02" color="#00007f"></a-box>
+      <a-box position="6.459433040078 3 11.88" rotation="0 0 0" height = "1.32942326491" width = "0.918866080156" depth = ".02" color="#fdc900"></a-box>
+        <!-- Floor -->
+        <a-plane  position="0 0.1 0" rotation="-90 0 0" width="24" height="24" repeat="4 2" color="#D89F70"></a-plane>
+        <!-- Walls -->
+        <a-box position="0 0.3 -12" rotation="0 0 0" scale="24 12 0.2" color="#a1a1a1"></a-box>
+
+        <a-box position="12 4.3 0" rotation="0 90 0" scale="8 4 0.2" color="#a1a1a1"></a-box>
+        <a-box position="12 0.3 3" rotation="0 90 0" scale="4 12 0.2" color="#a1a1a1"></a-box>
+        <a-box position="12 0.3 -3" rotation="0 90 0" scale="4 12 0.2" color="#a1a1a1"></a-box>
+        <a-box position="12 0.3 9" rotation="0 90 0" scale="6 12 0.2" color="#a1a1a1"></a-box>
+        <a-box position="12 0.3 -9" rotation="0 90 0" scale="6 12 0.2" color="#a1a1a1"></a-box>
+
+        <a-box position="0 0.3 12" rotation="0 0 0" scale="24 12 0.2" color="#a1a1a1"></a-box>\
+
+        <a-box position="-12 0.3 0" rotation="0 90 0" scale="10 12 0.2" color="#a1a1a1"></a-box>
+        <a-box position="-12 0.3 9" rotation="0 90 0" scale="6 12 0.2" color="#a1a1a1"></a-box>
+        <a-box position="-12 0.3 -9" rotation="0 90 0" scale="6 12 0.2" color="#a1a1a1"></a-box>
+        <!-- Ceiling -->
+        <a-plane position="0 6 0" rotation="90 0 0" width="24" height="24" repeat="4 2" color="white"></a-plane>
+
+        <!-- a text entity -->
+        <a-text value="Overview:
+        
+        This scene is a gallery consisting of four paintings in the “Who's Afraid of Red, Yellow, and Blue” series by Barnett Newman. 
+
+        The series is tied together by the three primary colors and was painted between 1966 and 1970. The title references a play called “Who's Afraid of Virginia Woolf” by Edward Albee. 
+       
+        Newman did not have a set path for this painting. He started with a red canvas and realized the only colors that would match were the other two primary colors: blue and yellow. 
+        
+        Two of the four paintings in the series were vandalized in 1982 and 1986. One of the instances of vandalism included a knife attack where the painting was slashed multiple times because the attacker was disturbed by the paintings. The cost to restore the painting was just over one million dollars." color="black" width="2.5" height="4" position="0 3a -4" ></a-text>
+
+        <a-text value="Barnett Newman (b. 1905)
+
+        Who's Afraid of Red, Yellow and Blue I, 1966
+
+        Acrylic on canvas" color="black" width="2.5" height="4" position="8 3.5a -11.8" ></a-text>
+        
+        <a-text value="Barnett Newman (b. 1905)
+
+        Who's Afraid of Red, Yellow and Blue II, 1967
+
+        Acrylic on canvas" color="black" width="2.5" height="4" position="-3.8 3.5a -11.8" ></a-text>
+
+        <a-text value="Barnett Newman (b. 1905)
+
+        Who's Afraid of Red, Yellow, and Blue III, 1967
+
+        Acrylic on canvas" color="black" width="2.5" height="4" position="-6.2 3a 11.8" rotation = "0 180 0"></a-text>
+
+        <a-text value="Barnett Newman (b. 1905)
+
+        Who's Afraid of Red, Yellow, and Blue IV, 1969-1970
+
+        Acrylic on canvas" color="black" width="2.5" height="4" position="5.5 3a 11.8" rotation = "0 180 0"></a-text>
+
+        <!-- Ambient Light -->
+        <a-light type="ambient" color="#888" intensity="1.0"></a-light>
+
+    </a-scene>
+</body>
+</html>
